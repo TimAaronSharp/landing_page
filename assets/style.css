@@ -15,6 +15,5 @@ body {
 
 .navlink-style>* {
   color: white;
-  border: none;
-  background-color: transparent;
+  text-decoration: none;
 }
