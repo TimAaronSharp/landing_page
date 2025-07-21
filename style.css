@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+}
+
+.navbar-style {
+  padding: 16px 100px 16px 100px;
+  outline: 1px solid black;
+  font-size: 24px;
+  color: white;
+}
+
+.navlink-style {
+  width: 40%;
+}
+
+.navlink-style>* {
+  color: white;
+  border: none;
+  background-color: transparent;
+}
