@@ -6,13 +6,6 @@ body {
   outline: 1px solid white;
 }
 
-.about-me-heading {
-  padding-top: 48px;
-  color: white;
-  font-size: 48px;
-  font-weight: bold;
-}
-
 .about-me-picture {
   border-radius: 50%;
 }
@@ -23,14 +16,23 @@ body {
 }
 
 .about-me-text {
-  padding: 100px;
+  padding: 52px 100px 100px 100px;
   font-size: 32px;
   color: white;
   text-indent: 2em;
+
+  >* {
+    margin: 0;
+  }
 }
 
 .code-tree-style {
   height: 100dvh;
+}
+
+.construction-img {
+  height: 907px;
+  width: 1318px;
 }
 
 .fade-text {
@@ -56,6 +58,14 @@ body {
   }
 }
 
+.heading-style {
+  padding: 48px 0 48px 0;
+  margin: 0;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+}
+
 .hero-text>* {
   font-size: 72px;
   color: transparent;
@@ -72,6 +82,15 @@ body {
   top: 30%;
 }
 
+.link-style {
+  width: 40%;
+
+  >* {
+    color: white;
+    text-decoration: none;
+  }
+}
+
 .navbar-style {
   padding: 16px 100px 16px 100px;
   /* outline: 1px solid white; */
@@ -79,11 +98,13 @@ body {
   color: white;
 }
 
-.navlink-style {
-  width: 40%;
+.portfolio-img {
+  /* height: 80%; */
+  width: 90%;
+  border-radius: 50px;
 }
 
-.navlink-style>* {
-  color: white;
-  text-decoration: none;
+.portfolio-section {
+  padding-left: 100px;
+  padding-right: 100px;
 }
