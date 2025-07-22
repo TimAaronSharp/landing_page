@@ -8,22 +8,57 @@ body {
   /* object-fit: cover; */
 }
 
+.fade-text {
+  /* opacity: 0;
+  animation: fadeOpacity 4s ease-in-out infinite; */
+  background: linear-gradient(to right, transparent 0%, white 100%);
+  background-size: 200% 100%;
+  background-position: -100% 0;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  animation: fadeAnimation 4s linear infinite;
+}
+
+@keyframes fadeAnimation {
+  0% {
+    background-position: 100% 0;
+    /* transform: translateX(-20px); */
+  }
+
+  100% {
+    background-position: -100% 0;
+    /* transform: translateX(0); */
+  }
+}
+
+/* @keyframes fadeOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+} */
+
 .hero-text>* {
   font-size: 72px;
-  color: white;
+  color: transparent;
   text-align: center;
 }
 
 .hero-text-left {
-  opacity: 0%;
-  transition: opacity 100% 1s ease-in-out;
   left: 8%;
   top: 30%;
 }
 
 .hero-text-right {
-  opacity: 0%;
-  transition: opacity 100% 1s ease-in-out;
   right: 4%;
   top: 30%;
 }
