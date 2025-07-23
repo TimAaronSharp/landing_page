@@ -15,6 +15,7 @@ hr {
 
 nav {
   position: fixed;
+  z-index: 10;
 }
 
 /* NOTE END ELEMENT RULES */
@@ -79,7 +80,7 @@ nav {
   text-shadow: .5px .5px .5px white;
 }
 
-#hero-section {
+.hero-section {
   background-image: url("imgs/code_tree.png");
   background-size: 50%;
   background-repeat: no-repeat;
