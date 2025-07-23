@@ -11,7 +11,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
     defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="assets\style.css">
+  <link rel="stylesheet" href="assets\css\style.css">
 
 </head>
 
@@ -107,11 +107,14 @@
         </div>
         <div class="col-12 col-md-6 p-0">
           <div class="d-flex justify-content-center">
-            <img src="assets/imgs/pretty_face.jpeg" alt="" class="img-fluid about-me-picture">
+            <button id="audio-play-button" class="about-me-picture btn-transparent">
+              <img src="assets/imgs/pretty_face.jpeg" alt="" class="img-fluid about-me-picture">
+            </button>
           </div>
         </div>
       </div>
     </div>
+
   </section>
   <!-- END OF ABOUT ME SECTION 🤓 -->
   <!-- PORTFOLIO SECTION📓 -->
@@ -193,7 +196,9 @@
     </section>
   </footer>
   <!-- END OF FOOTER 👣 -->
+  <audio id="audio-player"></audio>
   <script src="app.js"></script>
 </body>
+
 
 </html>

@@ -39,6 +39,11 @@ nav {
   }
 }
 
+.btn-transparent {
+  border: none;
+  background: transparent;
+}
+
 .code-tree-style {
   height: 100dvh;
 }
@@ -81,7 +86,7 @@ nav {
 }
 
 .hero-section {
-  background-image: url("imgs/code_tree.png");
+  background-image: url("../imgs/code_tree.png");
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -96,12 +101,12 @@ nav {
 
 .hero-text-left {
   left: 8%;
-  top: 30%;
+  top: 40%;
 }
 
 .hero-text-right {
   right: 4%;
-  top: 30%;
+  top: 40%;
 }
 
 .link-style {
