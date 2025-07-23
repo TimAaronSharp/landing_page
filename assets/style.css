@@ -1,6 +1,14 @@
+/* NOTE ELEMENT RULES */
+
 body {
   background-color: black;
 }
+
+nav {
+  position: fixed;
+}
+
+/* NOTE END ELEMENT RULES */
 
 .about-me-picture {
   border-radius: 50%;
@@ -147,6 +155,11 @@ body {
   top: 41%;
   border: none;
   background: transparent;
+}
+
+.smoked-glass {
+  background-color: rgba(43, 43, 43, 0.719);
+  backdrop-filter: blur(4px);
 }
 
 .sub-heading {
