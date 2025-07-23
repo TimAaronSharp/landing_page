@@ -67,9 +67,10 @@ nav {
   color: white;
   font-size: 48px;
   font-weight: bold;
+  text-shadow: .5px .5px .5px white;
 }
 
-.hero-section {
+#hero-section {
   background-image: url("imgs/code_tree.png");
   background-size: 50%;
   background-repeat: no-repeat;
@@ -164,6 +165,10 @@ nav {
 
 .sub-heading {
   font-size: 16px;
+}
+
+.text-shadow {
+  text-shadow: 1px 2px 4px black;
 }
 
 /* toolbox img is 1280 x 630 intrinsic */
