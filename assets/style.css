@@ -2,17 +2,12 @@ body {
   background-color: black;
 }
 
-.about-me-elements {
-  outline: 1px solid white;
-}
-
 .about-me-picture {
   border-radius: 50%;
 }
 
 .about-me-section {
   align-items: center;
-  outline: 1px solid white;
 }
 
 .about-me-text {
@@ -64,6 +59,14 @@ body {
   color: white;
   font-size: 48px;
   font-weight: bold;
+}
+
+.hero-section {
+  background-image: url("imgs/code_tree.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100dvh;
 }
 
 .hero-text>* {
@@ -150,9 +153,8 @@ body {
   font-size: 16px;
 }
 
-/* 1280 x 630 */
+/* toolbox img is 1280 x 630 intrinsic */
 .toolbox-img {
-  /* width: 30%; */
   height: 220.5px;
   width: 448px;
 }
