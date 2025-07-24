@@ -40,7 +40,6 @@ function playAudio() {
       if (currentPlaylistIndex >= playlist.length) {
         currentPlaylistIndex = 0
       }
-
     })
   }
 }
