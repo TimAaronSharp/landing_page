@@ -17,6 +17,7 @@ function playAudio() {
   const audioPlayer = document.getElementById('audio-player')
   const playButton = document.getElementById('audio-play-button')
   const playlist = [
+    'assets/audio/what_you_want.mp3',
     'assets/audio/something_need_doing.mp3',
     'assets/audio/dabu.mp3',
     'assets/audio/zug_zug.mp3',
