@@ -165,14 +165,29 @@ nav {
 }
 
 .skill-img {
+  --translate-x: 0px;
+  --translate-y: 0px;
+  --scale: 1;
+
+  position: absolute;
   height: 130px;
   width: 130px;
   left: 46%;
-  top: 45%;
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   z-index: -1;
   opacity: 0;
+  top: 45%;
+
+  transform: translate(var(--translate-x), var(--translate-y));
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+
+  /* Tried using this line to make the img scale on hover along with .skill-img:hover. Currently not working so I commented it out to avoid unforeseen issues, even though the translate still worked. */
+  /* transform: translate(var(--translate-x), var(--translate-y)) scale(var(--scale)); */
 }
+
+/* Currently not working */
+/* .skill-img:hover {
+  --scale: 1.1;
+} */
 
 .skills-section {
   padding-top: 300px;
@@ -217,47 +232,65 @@ nav {
 
 .html-logo-move {
   opacity: 1;
-  transform: translateY(-300px);
+  --translate-x: 0px;
+  --translate-y: -300px;
+  /* transform: translateY(-300px); */
 }
 
 .css-logo-move {
   opacity: 1;
-  transform: translate(-275px, -230px);
+  --translate-x: -275px;
+  --translate-y: -230px;
+  /* transform: translate(-275px, -230px); */
 }
 
 .bootstrap-logo-move {
   opacity: 1;
-  transform: translateX(-425px);
+  --translate-x: -425px;
+  --translate-y: 0px;
+  /* transform: translateX(-425px); */
 }
 
 .javascript-logo-move {
   opacity: 1;
-  transform: translate(275px, -230px);
+  --translate-x: 275px;
+  --translate-y: -230px;
+  /* transform: translate(275px, -230px); */
 }
 
 .vue-logo-move {
   opacity: 1;
-  transform: translateX(425px);
+  --translate-x: 425px;
+  --translate-y: 0px;
+  /* transform: translateX(425px); */
 }
 
 .csharp-logo-move {
   opacity: 1;
-  transform: translate(-315px, 230px);
+  --translate-x: -315px;
+  --translate-y: 230px;
+  /* transform: translate(-315px, 230px); */
 }
 
 .mysql-logo-move {
   opacity: 1;
-  transform: translate(-130px, 380px);
+  --translate-x: -130px;
+  --translate-y: 380px;
+  /* transform: translate(-130px, 380px); */
 }
 
 .mongodb-logo-move {
   opacity: 1;
-  transform: translate(130px, 380px);
+  --translate-x: 130px;
+  --translate-y: 380px;
+  /* transform: translate(130px, 380px); */
 }
 
 .nodejs-logo-move {
   opacity: 1;
-  transform: translate(315px, 230px);
+  --translate-x: 315px;
+  --translate-y: 230px;
+  /* transform: translate(315px, 230px); */
 }
 
 /* NOTE END SKILL LOGO ANIMATIONS */
