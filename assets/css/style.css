@@ -3,6 +3,10 @@
 body {
   background-color: black;
 }
+footer *{
+  color: white;
+  text-decoration: none;
+}
 
 hr {
   background-color: white;
@@ -114,9 +118,9 @@ nav {
 }
 
 .link-style {
-  width: 40%;
+  width: 60%;
 
-  >* {
+  * {
     color: white;
     text-decoration: none;
   }
@@ -191,7 +195,13 @@ nav {
 
 .skills-section {
   padding-top: 300px;
-  padding-bottom: 700px;
+  padding-bottom: 300px;
+
+  transition: padding-bottom .5s ease-in-out
+}
+
+.skills-section-grow{
+padding-bottom: 700px;
 }
 
 #skills-toolbox {
