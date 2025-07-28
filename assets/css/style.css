@@ -3,7 +3,8 @@
 body {
   background-color: black;
 }
-footer *{
+
+footer * {
   color: white;
   text-decoration: none;
 }
@@ -118,15 +119,17 @@ nav {
 }
 
 .link-style {
-  width: 60%;
+  width: 30%;
 
   * {
     color: white;
     text-decoration: none;
   }
+}
 
-  >*:hover {
-    transform: scale(1.5);
+.mobile-menu {
+  @media screen AND (max-width: 767.98px) {
+    display: inline;
   }
 }
 
@@ -200,8 +203,8 @@ nav {
   transition: padding-bottom .5s ease-in-out
 }
 
-.skills-section-grow{
-padding-bottom: 700px;
+.skills-section-grow {
+  padding-bottom: 700px;
 }
 
 #skills-toolbox {
@@ -232,6 +235,15 @@ padding-bottom: 700px;
   :hover {
     transform: scale(1.1);
   }
+}
+
+.zoom-items>a {
+  display: inline-block;
+}
+
+.zoom-items>*:hover {
+  transform: scale(1.5);
+  color: white;
 }
 
 .zoom-transition>* {

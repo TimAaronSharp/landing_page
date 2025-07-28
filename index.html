@@ -18,28 +18,37 @@
 <body>
   <!-- NAVBAR 🧭 -->
   <header>
-    <nav class="container-fluid smoked-glass text-shadow">
+    <nav class="container-fluid smoked-glass text-shadow navbar-nav">
       <div class="row">
         <div class="col-12 p-0">
-          <div class="navbar-style d-flex justify-content-between">
-            <div class="d-flex link-style zoom-transition">
-              <a href="#hero-section-link" class="mdi mdi-less-than">Tim Sharp</a>
+          <div class="navbar-style">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex zoom-transition zoom-items link-style">
+                <a href="#hero-section-link" class="mdi mdi-less-than">Tim Sharp</a>
+              </div>
+              <div class="d-flex justify-content-end w-100">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+                  aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="mdi mdi-menu text-light"></span>
+                </button>
+              </div>
             </div>
-            <div class="d-flex link-style justify-content-between zoom-transition">
-              <a href="#hero-section-link">Home</a>
-              <a href="#about-section-link">About</a>
-              <a href="#portfolio-section-link">Portfolio</a>
-              <a href="#skills-section-link">Skills</a>
-              <a href="https://github.com/TimAaronSharp" target="_blank" class="mdi mdi-github"
-                aria-label="Link to Tim Sharp's Github"></a>
-              <a href="https://www.linkedin.com/in/timothy-sharp/" target="_blank" class="mdi mdi-linkedin"
-                aria-label="Link to Tim Sharp's Linkedin profile"></a>
-              <a href="mailto:timothyaaron.sharp@gmail.com" class="mdi mdi-email-outline"
-                aria-label="Link to email Tim Sharp"></a>
+            <div class="collapse navbar-collapse w-100" id="navbar-links">
+              <div class="d-flex justify-content-between w-100 zoom-transition zoom-items align-items-center">
+                <a href="#hero-section-link" class="nav-link">Home</a>
+                <a href="#about-section-link" class="nav-link">About</a>
+                <a href="#portfolio-section-link" class="nav-link">Portfolio</a>
+                <a href="#skills-section-link" class="nav-link">Skills</a>
+                <a href="https://github.com/TimAaronSharp" target="_blank" class="mdi mdi-github nav-link"
+                  aria-label="Link to Tim Sharp's Github"></a>
+                <a href="https://www.linkedin.com/in/timothy-sharp/" target="_blank" class="mdi mdi-linkedin nav-link"
+                  aria-label="Link to Tim Sharp's Linkedin profile"></a>
+                <a href="mailto:timothyaaron.sharp@gmail.com" class="mdi mdi-email-outline nav-link"
+                  aria-label="Link to email Tim Sharp"></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </nav>
   </header>
   <!-- END OF NAVBAR 🧭 -->
@@ -189,7 +198,7 @@
     <section class="container-fluid smoked-glass text-shadow">
       <div class="row">
         <div class="col-12">
-          <div class="navbar-style d-flex zoom-transition">
+          <div class="navbar-style d-flex zoom-transition zoom-items">
             <a href="#hero-section-link" class="mdi mdi-less-than">/ Tim Sharp</a>
           </div>
         </div>
