@@ -230,8 +230,8 @@ nav {
 } */
 
 .skills-section {
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
   transition: padding-bottom .5s ease-in-out
 }
@@ -245,6 +245,13 @@ nav {
   top: 41%;
   border: none;
   background: transparent;
+  transition: transform .5s ease-in-out;
+}
+
+.skills-toolbox-move {
+  left: 37%;
+  top: 41%;
+  transform: translateY(300px);
 }
 
 .smoked-glass {

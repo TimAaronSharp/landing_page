@@ -2,6 +2,7 @@
 function skillAnimator() {
   document.getElementById('skills-toolbox').addEventListener('click', () => {
     document.getElementById('skills-section-id').classList.toggle('skills-section-grow')
+    document.getElementById('skills-toolbox').classList.toggle('skills-toolbox-move')
     document.getElementById('html-logo').classList.toggle('html-logo-move')
     document.getElementById('css-logo').classList.toggle('css-logo-move')
     document.getElementById('bootstrap-logo').classList.toggle('bootstrap-logo-move')
