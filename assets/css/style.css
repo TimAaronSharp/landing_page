@@ -27,21 +27,36 @@ nav {
 
 .about-me-picture {
   border-radius: 50%;
+  /* 
+  @media screen AND (max-width: 767.98px) {
+    margin-bottom: 48px;
+  } */
 
   :hover {
     transform: scale(1.1);
   }
+
 }
 
 .about-me-section {
   align-items: center;
+  padding: 100px 0 100px 100px;
+
+  @media screen AND (max-width: 767.98px) {
+    padding-right: 100px;
+
+  }
 }
 
 .about-me-text {
-  padding: 52px 100px 100px 100px;
+  /* padding: 0 0 100px 100px; */
   font-size: 32px;
   color: white;
   text-indent: 2em;
+
+  @media screen AND (max-width: 767.98px) {
+    padding-top: 100px;
+  }
 
   >* {
     margin: 0;
@@ -95,11 +110,13 @@ nav {
 }
 
 .hero-section {
-  background-image: url("../imgs/code_tree.png");
-  background-size: 50%;
+  /* background-image: url("../imgs/code_tree.png"); */
+  /* background-size: 50%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   height: 100dvh;
+  margin: 0 0 100px 0;
+
 }
 
 .hero-text>* {
