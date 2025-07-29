@@ -18,23 +18,22 @@
 <body>
   <!-- NAVBAR 🧭 -->
   <header>
-    <nav class="container-fluid smoked-glass text-shadow navbar-nav">
+    <nav class="container-fluid smoked-glass text-shadow">
       <div class="row">
-        <div class="col-12 p-0">
-          <div class="navbar-style">
-            <div class="d-flex justify-content-between align-items-center">
+        <div class="col-12 p-0 w-100">
+          <div class="justify-content-between navbar-style navbar navbar-expand-md w-100">
+            <div class="d-flex justify-content-between align-items-center mobile-menu">
               <div class="d-flex zoom-transition zoom-items link-style">
                 <a href="#hero-section-link" class="mdi mdi-less-than">Tim Sharp</a>
               </div>
-              <div class="d-flex justify-content-end w-100">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
-                  aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="mdi mdi-menu text-light"></span>
-                </button>
-              </div>
+              <button class="navbar-toggler d-md-none justify-content-end p-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-links" aria-controls="navbarText" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="mdi mdi-menu text-light"></span>
+              </button>
             </div>
-            <div class="collapse navbar-collapse w-100" id="navbar-links">
-              <div class="d-flex justify-content-between w-100 zoom-transition zoom-items align-items-center">
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+              <div class="d-flex justify-content-between zoom-transition zoom-items nav-section-width">
                 <a href="#hero-section-link" class="nav-link">Home</a>
                 <a href="#about-section-link" class="nav-link">About</a>
                 <a href="#portfolio-section-link" class="nav-link">Portfolio</a>
