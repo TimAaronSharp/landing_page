@@ -293,12 +293,6 @@ nav {
   transition: transform 1s ease-in-out;
 }
 
-.skills-toolbox-move {
-  left: 37%;
-  top: 41%;
-  transform: translateY(320px);
-}
-
 .smoked-glass {
   background-color: rgba(43, 43, 43, 0.719);
   backdrop-filter: blur(4px);
@@ -338,12 +332,27 @@ nav {
 
 /* NOTE SKILL LOGO ANIMATIONS */
 
+.skills-toolbox-move {
+  left: 37%;
+  top: 41%;
+  transform: translate(-20px, 320px);
+
+  @media screen AND (max-width: 991.98px) {
+    transform: translateY(350px);
+  }
+}
+
 .html-logo-move {
   opacity: 1;
   z-index: 1;
   --translate-x: 0px;
   --translate-y: -300px;
   /* transform: translateY(-300px); */
+
+  @media screen AND (max-width: 991.98px) {
+    --translate-x: -25px;
+    --translate-y: -450px;
+  }
 }
 
 .css-logo-move {
@@ -352,6 +361,11 @@ nav {
   --translate-x: -275px;
   --translate-y: -230px;
   /* transform: translate(-275px, -230px); */
+
+  @media screen AND (max-width: 991.98px) {
+    --translate-x: -200px;
+    --translate-y: -330px;
+  }
 }
 
 .bootstrap-logo-move {
@@ -360,6 +374,11 @@ nav {
   --translate-x: -425px;
   --translate-y: 0px;
   /* transform: translateX(-425px); */
+
+  @media screen AND (max-width: 991.98px) {
+    --translate-x: -135px;
+    --translate-y: -130px;
+  }
 }
 
 .javascript-logo-move {
@@ -368,6 +387,11 @@ nav {
   --translate-x: 275px;
   --translate-y: -230px;
   /* transform: translate(275px, -230px); */
+
+  @media screen AND (max-width: 991.98px) {
+    --translate-x: 150px;
+    --translate-y: -330px;
+  }
 }
 
 .vue-logo-move {
@@ -376,6 +400,11 @@ nav {
   --translate-x: 425px;
   --translate-y: 0px;
   /* transform: translateX(425px); */
+
+  @media screen AND (max-width: 991.98px) {
+    --translate-x: 80px;
+    --translate-y: -130px;
+  }
 }
 
 .csharp-logo-move {
@@ -384,6 +413,11 @@ nav {
   --translate-x: -315px;
   --translate-y: 230px;
   /* transform: translate(-315px, 230px); */
+
+  @media screen AND (max-width: 991.98px) {
+    --translate-x: -135px;
+    --translate-y: 230px;
+  }
 }
 
 .mysql-logo-move {
@@ -392,6 +426,11 @@ nav {
   --translate-x: -130px;
   --translate-y: 380px;
   /* transform: translate(-130px, 380px); */
+
+  @media screen AND (max-width: 991.98px) {
+    --translate-x: -135px;
+    --translate-y: 400px;
+  }
 }
 
 .mongodb-logo-move {
@@ -400,6 +439,11 @@ nav {
   --translate-x: 130px;
   --translate-y: 380px;
   /* transform: translate(130px, 380px); */
+
+  @media screen AND (max-width: 991.98px) {
+    --translate-x: 87px;
+    --translate-y: 420px;
+  }
 }
 
 .nodejs-logo-move {
@@ -408,6 +452,11 @@ nav {
   --translate-x: 315px;
   --translate-y: 230px;
   /* transform: translate(315px, 230px); */
+
+  @media screen AND (max-width: 991.98px) {
+    --translate-x: 90px;
+    --translate-y: 230px;
+  }
 }
 
 /* NOTE END SKILL LOGO ANIMATIONS */
