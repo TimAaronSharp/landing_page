@@ -45,7 +45,7 @@ nav {
   background-image: url('../imgs/backgrounds/keyboard.jpg');
 
   @media screen AND (max-width: 991.98px) {
-    padding-right: 100px;
+    padding: 100px 50px 100px 50px;
 
   }
 
@@ -92,15 +92,6 @@ nav {
 .btn-transparent {
   border: none;
   background: transparent;
-}
-
-.code-tree-style {
-  height: 100dvh;
-}
-
-.construction-img {
-  height: 907px;
-  width: 1318px;
 }
 
 .fade-text {
@@ -208,7 +199,7 @@ nav {
 }
 
 .portfolio-img {
-  width: 90%;
+  max-width: 90%;
   border-radius: 50px;
 }
 
@@ -216,7 +207,15 @@ nav {
   font-size: 24px;
   text-align: center;
 
-  >* {
+  @media screen AND (max-width: 991.98px) {
+    margin-bottom: 20px;
+  }
+
+  /* * {
+    text-align: center;
+  } */
+
+  * {
     color: white;
     text-decoration: none;
   }
@@ -224,10 +223,6 @@ nav {
 
 .portfolio-link:hover {
   transform: scale(1.1);
-}
-
-.portfolio-link-text-margin {
-  margin: 20px 0 0 0;
 }
 
 .portfolio-section {
@@ -238,6 +233,17 @@ nav {
   * {
     z-index: 1;
   }
+
+  @media screen AND (max-width: 991.98px) {
+    padding: 100px 50px 100px 50px;
+  }
+}
+
+.portfolio-text-area {
+  width: 90%;
+  border-radius: 50px;
+  margin-top: 10px;
+  padding: 5px 0 10px 0;
 }
 
 .skill-img {
@@ -246,15 +252,15 @@ nav {
   --scale: 1;
 
   position: absolute;
-  height: 130px;
-  width: 130px;
+  max-height: 130px;
+  max-width: 130px;
   left: 46%;
-  /* z-index: -1; */
+  z-index: -1;
   opacity: 0;
   top: 45%;
 
   transform: translate(var(--translate-x), var(--translate-y));
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out, z-index .1s ease-in, z-index 1.5s ease-out;
 
   /* Tried using this line to make the img scale on hover along with .skill-img:hover. Currently not working so I commented it out to avoid unforeseen issues, even though the translate still worked. */
   /* transform: translate(var(--translate-x), var(--translate-y)) scale(var(--scale)); */
@@ -273,10 +279,6 @@ nav {
   z-index: 1;
 
   transition: padding-bottom 1s ease-in-out;
-
-  * {
-    z-index: 1;
-  }
 }
 
 .skills-section-grow {
@@ -312,8 +314,9 @@ nav {
 
 /* toolbox img is 1280 x 630 intrinsic */
 .toolbox-img {
-  height: 220.5px;
-  width: 448px;
+  max-height: 220.5px;
+  max-width: 448px;
+  z-index: 1;
 
   :hover {
     transform: scale(1.1);
