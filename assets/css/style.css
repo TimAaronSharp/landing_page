@@ -39,12 +39,18 @@ nav {
 }
 
 .about-me-section {
+  margin: 100px 0 100px 0;
   align-items: center;
   padding: 100px 0 100px 100px;
+  background-image: url('../imgs/backgrounds/keyboard.jpg');
 
   @media screen AND (max-width: 991.98px) {
     padding-right: 100px;
 
+  }
+
+  * {
+    z-index: 1;
   }
 }
 
@@ -61,6 +67,25 @@ nav {
   >* {
     margin: 0;
   }
+}
+
+.background-img-style {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-img-style::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(128, 128, 128, 0.5);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .btn-transparent {
@@ -111,10 +136,7 @@ nav {
 
 .hero-section {
   background-image: url("../imgs/backgrounds/code_tree.png");
-  background-attachment: fixed;
   background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 100dvh;
   margin: 0 0 100px 0;
 
@@ -122,6 +144,10 @@ nav {
     background-size: 100%;
     /* height: 100vh;
     margin: 0; */
+  }
+
+  * {
+    z-index: 1;
   }
 
 }
@@ -184,6 +210,10 @@ nav {
   outline: 1px solid white;
 }
 
+.parallax {
+  background-attachment: fixed;
+}
+
 .portfolio-img {
   width: 90%;
   border-radius: 50px;
@@ -209,6 +239,11 @@ nav {
 
 .portfolio-section {
   padding: 100px;
+  background-image: url('../imgs/backgrounds/building_plans.jpg');
+
+  * {
+    z-index: 1;
+  }
 }
 
 .skill-img {
@@ -220,7 +255,7 @@ nav {
   height: 130px;
   width: 130px;
   left: 46%;
-  z-index: -1;
+  /* z-index: -1; */
   opacity: 0;
   top: 45%;
 
@@ -239,8 +274,14 @@ nav {
 .skills-section {
   padding-top: 100px;
   padding-bottom: 100px;
+  background-image: url('../imgs/backgrounds/computer_tools.jpg');
+  z-index: 1;
 
-  transition: padding-bottom 1s ease-in-out
+  transition: padding-bottom 1s ease-in-out;
+
+  * {
+    z-index: 1;
+  }
 }
 
 .skills-section-grow {
@@ -301,6 +342,7 @@ nav {
 
 .html-logo-move {
   opacity: 1;
+  z-index: 1;
   --translate-x: 0px;
   --translate-y: -300px;
   /* transform: translateY(-300px); */
@@ -308,6 +350,7 @@ nav {
 
 .css-logo-move {
   opacity: 1;
+  z-index: 1;
   --translate-x: -275px;
   --translate-y: -230px;
   /* transform: translate(-275px, -230px); */
@@ -315,6 +358,7 @@ nav {
 
 .bootstrap-logo-move {
   opacity: 1;
+  z-index: 1;
   --translate-x: -425px;
   --translate-y: 0px;
   /* transform: translateX(-425px); */
@@ -322,6 +366,7 @@ nav {
 
 .javascript-logo-move {
   opacity: 1;
+  z-index: 1;
   --translate-x: 275px;
   --translate-y: -230px;
   /* transform: translate(275px, -230px); */
@@ -329,6 +374,7 @@ nav {
 
 .vue-logo-move {
   opacity: 1;
+  z-index: 1;
   --translate-x: 425px;
   --translate-y: 0px;
   /* transform: translateX(425px); */
@@ -336,6 +382,7 @@ nav {
 
 .csharp-logo-move {
   opacity: 1;
+  z-index: 1;
   --translate-x: -315px;
   --translate-y: 230px;
   /* transform: translate(-315px, 230px); */
@@ -343,6 +390,7 @@ nav {
 
 .mysql-logo-move {
   opacity: 1;
+  z-index: 1;
   --translate-x: -130px;
   --translate-y: 380px;
   /* transform: translate(-130px, 380px); */
@@ -350,6 +398,7 @@ nav {
 
 .mongodb-logo-move {
   opacity: 1;
+  z-index: 1;
   --translate-x: 130px;
   --translate-y: 380px;
   /* transform: translate(130px, 380px); */
@@ -357,6 +406,7 @@ nav {
 
 .nodejs-logo-move {
   opacity: 1;
+  z-index: 1;
   --translate-x: 315px;
   --translate-y: 230px;
   /* transform: translate(315px, 230px); */
