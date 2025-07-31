@@ -39,13 +39,13 @@ nav {
 }
 
 .about-me-section {
-  margin: 100px 0 100px 0;
+  margin: 100px 0 0 0;
   align-items: center;
   padding: 100px 0 100px 100px;
   background-image: url('../imgs/backgrounds/keyboard.jpg');
 
   @media screen AND (max-width: 991.98px) {
-    padding: 100px 50px 100px 50px;
+    padding: 100px 50px 0 50px;
 
   }
 
@@ -274,7 +274,7 @@ nav {
 .skills-section {
   padding-top: 100px;
   padding-bottom: 100px;
-  margin-top: 100px;
+  margin: 100px 0 100px 0;
   background-image: url('../imgs/backgrounds/computer_tools.jpg');
   z-index: 1;
 
@@ -308,8 +308,8 @@ nav {
 
 /* toolbox img is 1280 x 630 intrinsic */
 .toolbox-img {
-  max-height: 220.5px;
-  max-width: 448px;
+  max-height: 50%;
+  max-width: 50%;
   z-index: 1;
 
   :hover {
