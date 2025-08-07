@@ -7,6 +7,7 @@ body {
 footer * {
   color: white;
   text-decoration: none;
+  max-width: 100%;
 }
 
 hr {
@@ -20,6 +21,7 @@ hr {
 
 nav {
   position: fixed;
+  max-width: 100%;
   z-index: 10;
 }
 
@@ -130,6 +132,7 @@ nav {
   background-image: url("../imgs/backgrounds/code_tree.png");
   background-size: 50%;
   height: 100dvh;
+  /* max-width: 100%; */
   margin: 0 0 100px 0;
 
   * {
@@ -286,10 +289,12 @@ nav {
 }
 
 #skills-toolbox {
-  left: 37%;
-  top: 41%;
+  /* left: 37%; */
+  /* top: 41%; */
+  display: inline-block;
+  padding: 0;
   border: none;
-  background: transparent;
+  background: none;
   transition: transform 1s ease-in-out;
 }
 
@@ -308,8 +313,7 @@ nav {
 
 /* toolbox img is 1280 x 630 intrinsic */
 .toolbox-img {
-  max-height: 50%;
-  max-width: 50%;
+  max-width: 100%;
   z-index: 1;
 
   :hover {

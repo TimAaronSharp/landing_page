@@ -33,6 +33,7 @@ Hero:
 Decide on what to put there (likely scrap the codetree and put something else there that has icons, maybe moving around?)
 Maybe make the hero section the about me section, but without including everything in the about me section? Something just like,
 "Hello, I'm Tim Sharp, Full-Stack Web Developer" and maybe a link/download link to my resume?
+Maybe try to figure out how to animate things (like lines of code maybe?) from right to left off the screen and then repeat?
 
 
 Skills section:
