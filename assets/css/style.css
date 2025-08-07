@@ -72,6 +72,42 @@ nav {
   }
 }
 
+.arrow-img {
+  width: 190px;
+  max-width: 100%;
+  position: absolute;
+  /* justify-content: center; */
+  left: 65%;
+  top: 25%;
+  opacity: 1;
+
+  animation: arrow-img-animation 2s ease-in-out infinite;
+  transition: opacity .2s ease-in;
+}
+
+@keyframes arrow-img-animation {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-110px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.arrow-img-disappear {
+  opacity: 0;
+  transition: .2s ease-in;
+}
+
+.arrow-img:not(.arrow-img-disappear) {
+  transition: opacity .2s ease-out .8s;
+}
+
 .background-img-style {
   position: relative;
   background-size: cover;
