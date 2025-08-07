@@ -22,6 +22,7 @@ Chrome Devtool Mobile Devices (reverse dimensions for landscape)
 1706
 1368
 1280
+1180
 1024
 991.98 (col-lg)
 
@@ -37,7 +38,7 @@ Maybe try to figure out how to animate things (like lines of code maybe?) from r
 
 
 Skills section:
-Make sure the toolbox has some indication that it should be clicked on (maybe for the about me pic as well?).
+X - Make sure the toolbox has some indication that it should be clicked on (maybe for the about me pic as well?).
 Scrap making each skill logo grow when you hover over it instead just add a progress bar that appears under each skill logo that shows 
 how proficient you are in that skill with a slight delayed effect, appearing after they have come to rest (or maybe just before?).
 
