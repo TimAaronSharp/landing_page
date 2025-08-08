@@ -43,11 +43,11 @@ nav {
 .about-me-section {
   margin: 100px 0 0 0;
   align-items: center;
-  padding: 100px 0 100px 100px;
+  padding: clamp(1.56rem, 10vw, 6.25rem) 0 clamp(1.56rem, 10vw, 6.25rem) clamp(1.56rem, 10vw, 6.25rem);
   background-image: url('../imgs/backgrounds/keyboard.jpg');
 
   @media screen AND (max-width: 991.98px) {
-    padding: 100px 50px 0 50px;
+    padding-right: clamp(1.56rem, 10vw, 6.25rem);
 
   }
 
@@ -64,13 +64,14 @@ nav {
 
 .about-me-text {
   padding-right: 100px;
-  font-size: 32px;
+  font-size: clamp(1rem, 2vw, 2rem);
   color: white;
   text-indent: 2em;
 
   @media screen AND (max-width: 991.98px) {
-    padding-top: 100px;
-    padding-right: 0;
+    /* padding-top: 100px;
+    padding-right: 0; */
+    padding: clamp(1.56rem, 10vw, 6.25rem) 0 0;
   }
 
   >* {
@@ -86,6 +87,7 @@ nav {
   left: 65%;
   top: 25%;
   opacity: 1;
+  z-index: 1;
 
   animation: arrow-img-animation 2s ease-in-out infinite;
   transition: opacity .2s ease-in;
@@ -97,7 +99,7 @@ nav {
   }
 
   50% {
-    transform: translateX(-110px);
+    transform: translateX(-7vw);
   }
 
   100% {
@@ -166,7 +168,7 @@ nav {
   padding: 48px 0 48px 0;
   margin: 0;
   color: white;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: bold;
   text-shadow: .5px .5px .5px white;
 }
@@ -409,7 +411,7 @@ nav {
 
 .skills-toolbox-move {
   left: 37%;
-  top: 41%;
+  top: 45%;
   transform: translate(-20px, 320px);
 
   @media screen AND (max-width: 991.98px) {
