@@ -4,7 +4,9 @@ function skillAnimator() {
     // Skill section, toolbox, and arrow.
     document.getElementById('skills-section-id').classList.toggle('skills-section-grow')
     document.getElementById('skills-toolbox').classList.toggle('skills-toolbox-move')
-    document.getElementById('arrow-img-id').classList.toggle('arrow-img-disappear')
+    // document.getElementById('toolbox-img').classList.toggle('pause-animation')
+    // document.getElementById('arrow-img-id').classList.toggle('arrow-img-disappear')
+
     // Logos.
     document.getElementById('html-logo').classList.toggle('html-logo-move')
     document.getElementById('css-logo').classList.toggle('css-logo-move')
