@@ -121,6 +121,7 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .background-img-style::after {
@@ -178,10 +179,7 @@ nav {
   height: 100dvh;
   /* max-width: 100%; */
   margin: 0 0 100px 0;
-
-  * {
-    z-index: 1;
-  }
+  padding-top: 69px;
 
   @media screen AND (max-width: 991.98px) {
     background-size: 100%;
@@ -204,6 +202,12 @@ nav {
 .hero-text-right {
   right: 4%;
   top: 40%;
+}
+
+.img-atom {
+  max-width: 100%;
+  width: 10%;
+  z-index: 1;
 }
 
 .link-style * {
@@ -355,7 +359,7 @@ nav {
   padding-bottom: 100px;
   margin: 100px 0 100px 0;
   background-image: url('../imgs/backgrounds/computer_tools.jpg');
-  z-index: 1;
+  /* z-index: 1; */
 
   transition: padding-bottom 1s ease-in-out;
 }
