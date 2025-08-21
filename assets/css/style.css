@@ -189,6 +189,7 @@ nav {
   width: 300px;
   z-index: 1;
   position: absolute;
+  border-radius: 5px;
 }
 
 .img-csharp {
