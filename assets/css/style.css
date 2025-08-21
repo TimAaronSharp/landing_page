@@ -109,6 +109,11 @@ nav {
   background: transparent;
 }
 
+.code-img {
+  box-shadow: 0 0 10px 10px #0f0f0f;
+  filter: drop-shadow(0 0 10px #0f0f0f);
+}
+
 .fade-text {
   background: linear-gradient(to right, transparent 0%, white 100%);
   background-size: 200% 100%;
