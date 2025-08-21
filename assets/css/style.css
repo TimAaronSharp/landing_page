@@ -84,121 +84,6 @@ nav {
   }
 }
 
-/* .arrow-img {
-  width: 190px;
-  max-width: 100%;
-  position: absolute;
-  left: 65vw;
-  top: 25%;
-  opacity: 1;
-  z-index: 1;
-
-  animation: arrow-img-animation 2s ease-in-out infinite;
-  transition: opacity .2s ease-in;
-}
-
-@keyframes arrow-img-animation {
-  0% {
-    transform: translateX(0);
-  }
-
-  50% {
-    transform: translateX(clamp(-10vw, -7vw, -1vw));
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.arrow-img-disappear {
-  opacity: 0;
-  transition: .2s ease-in;
-} */
-
-/* NOTE This applies to any element that has the .arrow-img class and also does NOT have the .arrow-img-disappear class as well. */
-/* .arrow-img:not(.arrow-img-disappear) {
-  transition: opacity .2s ease-out .8s;
-} */
-
-/* .atom-img {
-  max-width: 100%;
-  width: 142px;
-  height: 64px;
-  z-index: 1;
-  position: absolute;
-  display: inline-block;
-} */
-
-/* .atom-csharp-img {
-  top: 45%;
-  right: 45%;
-  animation: csharp-z-animation 3s ease-in-out infinite;
-} */
-
-/* .atom-csharp-orbit {
-  transform: rotateX(70deg) rotateY(40deg);
-} */
-
-/* .atom-html-orbit {
-  transform: rotateX(105deg);
-} */
-
-/* .atom-orbit {
-  border: 1px solid white;
-  border-radius: 50%;
-  max-width: 100%;
-  max-height: 100%;
-  width: 400px;
-  height: 400px;
-} */
-
-/* .atom-img-csharp-orbit {
-  display: inline-block;
-  animation: csharp-xy-animation 2.5s ease-in-out infinite;
-  z-index: 1;
-} */
-
-/* .atom-container {
-  perspective: 1000px;
-} */
-
-
-
-
-
-
-
-/* @keyframes csharp-xy-animation {
-  0% {
-    transform: translate(0, 0);
-
-  }
-
-  50% {
-    transform: translate(15vw, 15vh);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes csharp-z-animation {
-  0% {
-    transform: scale(1);
-
-  }
-
-  50% {
-    transform: scale(.5);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-} */
-
 .background-img-style {
   position: relative;
   background-size: cover;
@@ -245,6 +130,13 @@ nav {
     background-position: -100% 0;
     /* transform: translateX(0); */
   }
+}
+
+.greeting {
+  position: relative;
+  color: white;
+  font-size: clamp(2rem, 5vw, 4rem);
+  z-index: 2;
 }
 
 .heading-style {
@@ -721,3 +613,118 @@ nav {
 }
 
 /* NOTE END SKILL LOGO ANIMATIONS */
+
+/* .arrow-img {
+  width: 190px;
+  max-width: 100%;
+  position: absolute;
+  left: 65vw;
+  top: 25%;
+  opacity: 1;
+  z-index: 1;
+
+  animation: arrow-img-animation 2s ease-in-out infinite;
+  transition: opacity .2s ease-in;
+}
+
+@keyframes arrow-img-animation {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(clamp(-10vw, -7vw, -1vw));
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.arrow-img-disappear {
+  opacity: 0;
+  transition: .2s ease-in;
+} */
+
+/* NOTE This applies to any element that has the .arrow-img class and also does NOT have the .arrow-img-disappear class as well. */
+/* .arrow-img:not(.arrow-img-disappear) {
+  transition: opacity .2s ease-out .8s;
+} */
+
+/* .atom-img {
+  max-width: 100%;
+  width: 142px;
+  height: 64px;
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+} */
+
+/* .atom-csharp-img {
+  top: 45%;
+  right: 45%;
+  animation: csharp-z-animation 3s ease-in-out infinite;
+} */
+
+/* .atom-csharp-orbit {
+  transform: rotateX(70deg) rotateY(40deg);
+} */
+
+/* .atom-html-orbit {
+  transform: rotateX(105deg);
+} */
+
+/* .atom-orbit {
+  border: 1px solid white;
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  width: 400px;
+  height: 400px;
+} */
+
+/* .atom-img-csharp-orbit {
+  display: inline-block;
+  animation: csharp-xy-animation 2.5s ease-in-out infinite;
+  z-index: 1;
+} */
+
+/* .atom-container {
+  perspective: 1000px;
+} */
+
+
+
+
+
+
+
+/* @keyframes csharp-xy-animation {
+  0% {
+    transform: translate(0, 0);
+
+  }
+
+  50% {
+    transform: translate(15vw, 15vh);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes csharp-z-animation {
+  0% {
+    transform: scale(1);
+
+  }
+
+  50% {
+    transform: scale(.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+} */
