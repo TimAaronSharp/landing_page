@@ -329,10 +329,14 @@ nav {
   left: 0;
   height: 400px;
   background: rgba(128, 128, 128, 0.5);
-  pointer-events: none;
+  /* pointer-events: none; */
   z-index: 1;
   transform: translateY(100%);
   transition: transform .65s ease-in-out;
+
+  @media (hover:none) and (pointer: coarse) {
+    transform: translateY(0);
+  }
 }
 
 .portfolio-link {
@@ -376,11 +380,9 @@ nav {
   } */
 }
 
-.portfolio-text-area {
-  width: 90%;
-  border-radius: 50px;
-  margin-top: 10px;
-  padding: 5px 0 10px 0;
+.portfolio-links {
+  font-size: 48px;
+  padding-left: 20px;
 }
 
 .portfolio-title {
