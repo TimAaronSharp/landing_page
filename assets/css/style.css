@@ -426,6 +426,14 @@ nav {
 
 .skills-section-grow {
   padding-bottom: 700px;
+
+  @media screen AND (max-width: 1031.98px) {
+    padding-bottom: 850px;
+  }
+
+  @media screen AND (max-width: 469.98px) {
+    padding-bottom: 900px;
+  }
 }
 
 #skills-toolbox {
@@ -461,6 +469,10 @@ nav {
 #toolbox-img {
   max-width: 100%;
   z-index: 1;
+
+  @media screen AND (max-width: 469.98px) {
+    width: 50%;
+  }
 }
 
 .smoked-glass {
@@ -496,10 +508,16 @@ nav {
 .skills-toolbox-move {
   left: 37%;
   top: 45%;
-  transform: translate(-20px, 320px);
+  transform: translate(-10px, 320px);
 
-  @media screen AND (max-width: 991.98px) {
-    transform: translateY(350px);
+  @media screen AND (max-width: 1031.98px) {
+    /* transform: translateY(440px); */
+    transform: translate(-10px, 440px);
+  }
+
+  @media screen AND (max-width: 469.98px) {
+    /* transform: translateY(470px); */
+    transform: translate(-10px, 470px);
   }
 }
 
@@ -510,9 +528,14 @@ nav {
   --translate-y: -300px;
   /* transform: translateY(-300px); */
 
-  @media screen AND (max-width: 991.98px) {
+  @media screen AND (max-width: 1031.98px) {
     --translate-x: -25px;
-    --translate-y: -450px;
+    --translate-y: -470px;
+  }
+
+  @media screen AND (max-width: 469.98px) {
+    --translate-x: -45px;
+    --translate-y: -470px;
   }
 }
 
@@ -523,9 +546,14 @@ nav {
   --translate-y: -230px;
   /* transform: translate(-275px, -230px); */
 
-  @media screen AND (max-width: 991.98px) {
-    --translate-x: -200px;
-    --translate-y: -330px;
+  @media screen AND (max-width: 1031.98px) {
+    --translate-x: -128px;
+    --translate-y: -310px;
+  }
+
+  @media screen AND (max-width: 469.98px) {
+    --translate-x: -128px;
+    --translate-y: -310px;
   }
 }
 
@@ -536,9 +564,14 @@ nav {
   --translate-y: 0px;
   /* transform: translateX(-425px); */
 
-  @media screen AND (max-width: 991.98px) {
+  @media screen AND (max-width: 1031.98px) {
     --translate-x: -135px;
-    --translate-y: -130px;
+    --translate-y: -110px;
+  }
+
+  @media screen AND (max-width: 469.98px) {
+    --translate-x: -135px;
+    --translate-y: -110px;
   }
 }
 
@@ -549,9 +582,14 @@ nav {
   --translate-y: -230px;
   /* transform: translate(275px, -230px); */
 
-  @media screen AND (max-width: 991.98px) {
-    --translate-x: 150px;
-    --translate-y: -330px;
+  @media screen AND (max-width: 1031.98px) {
+    --translate-x: 87px;
+    --translate-y: -310px;
+  }
+
+  @media screen AND (max-width: 469.98px) {
+    --translate-x: 37px;
+    --translate-y: -310px;
   }
 }
 
@@ -562,9 +600,14 @@ nav {
   --translate-y: 0px;
   /* transform: translateX(425px); */
 
-  @media screen AND (max-width: 991.98px) {
-    --translate-x: 80px;
-    --translate-y: -130px;
+  @media screen AND (max-width: 1031.98px) {
+    --translate-x: 87px;
+    --translate-y: -110px;
+  }
+
+  @media screen AND (max-width: 469.98px) {
+    --translate-x: 37px;
+    --translate-y: -110px;
   }
 }
 
@@ -575,9 +618,14 @@ nav {
   --translate-y: 230px;
   /* transform: translate(-315px, 230px); */
 
-  @media screen AND (max-width: 991.98px) {
-    --translate-x: -135px;
-    --translate-y: 230px;
+  @media screen AND (max-width: 1031.98px) {
+    --translate-x: -128px;
+    --translate-y: 250px;
+  }
+
+  @media screen AND (max-width: 469.98px) {
+    --translate-x: -128px;
+    --translate-y: 250px;
   }
 }
 
@@ -588,9 +636,14 @@ nav {
   --translate-y: 380px;
   /* transform: translate(-130px, 380px); */
 
-  @media screen AND (max-width: 991.98px) {
+  @media screen AND (max-width: 1031.98px) {
     --translate-x: -135px;
-    --translate-y: 400px;
+    --translate-y: 440px;
+  }
+
+  @media screen AND (max-width: 469.98px) {
+    --translate-x: -135px;
+    --translate-y: 440px;
   }
 }
 
@@ -601,9 +654,14 @@ nav {
   --translate-y: 380px;
   /* transform: translate(130px, 380px); */
 
-  @media screen AND (max-width: 991.98px) {
+  @media screen AND (max-width: 1031.98px) {
     --translate-x: 87px;
-    --translate-y: 420px;
+    --translate-y: 458px;
+  }
+
+  @media screen AND (max-width: 469.98px) {
+    --translate-x: 30px;
+    --translate-y: 458px;
   }
 }
 
@@ -614,9 +672,14 @@ nav {
   --translate-y: 230px;
   /* transform: translate(315px, 230px); */
 
-  @media screen AND (max-width: 991.98px) {
-    --translate-x: 90px;
-    --translate-y: 230px;
+  @media screen AND (max-width: 1031.98px) {
+    --translate-x: 97px;
+    --translate-y: 250px;
+  }
+
+  @media screen AND (max-width: 469.98px) {
+    --translate-x: 37px;
+    --translate-y: 250px;
   }
 }
 
