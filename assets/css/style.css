@@ -109,10 +109,9 @@ nav {
   background: transparent;
 }
 
-.code-img {
-  box-shadow: 0 0 10px 10px #0f0f0f;
-  filter: drop-shadow(0 0 10px #0f0f0f);
-}
+/* .code-img {
+  @media {}
+} */
 
 .fade-text {
   background: linear-gradient(to right, transparent 0%, white 100%);
@@ -273,7 +272,7 @@ nav {
   text-decoration: none;
 }
 
-.mobile-menu {
+.mobile-menu-button {
   @media screen AND (max-width: 991.98px) {
     width: 100%;
   }
@@ -281,10 +280,12 @@ nav {
 
 .nav-section-width {
   width: 50%;
+  justify-content: space-between;
 
   @media screen AND (max-width: 991.98px) {
     width: 100%;
     padding-top: 10px;
+    flex-direction: column;
   }
 }
 
@@ -478,6 +479,19 @@ nav {
 .smoked-glass {
   background-color: rgba(43, 43, 43, 0.719);
   backdrop-filter: blur(4px);
+}
+
+/* NOTE display: contents causes an element's children to appear as if they were the direct children of the element's parent, effectively removing the element itself  from the layout without removing its content. This particular usage is what allowed the social nav-links to still be affected by the justify-content-between (space-between) with the other nav-links to retain the same spacing, even while the social links were in their own wrapper div for structure in the collapse menu. */
+.social-links-wrapper {
+  display: contents;
+}
+
+@media screen AND (max-width: 991.98px) {
+  .social-links-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
 }
 
 .sub-heading {
