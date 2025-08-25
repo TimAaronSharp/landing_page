@@ -34,13 +34,16 @@ nav {
 
 .about-me-picture {
   border-radius: 50%;
+
   /* 
   @media screen AND (max-width: 991.98px) {
     margin-bottom: 48px;
   } */
+  @media (hover:hover) and (pointer: fine) {
 
-  :hover {
-    transform: scale(1.1);
+    :hover {
+      transform: scale(1.1);
+    }
   }
 
 }
@@ -110,7 +113,7 @@ nav {
 }
 
 .code-img {
-  @media screen AND (max-width: 1300.98px) {
+  @media screen AND (max-width: 1400.98px) {
     display: none;
   }
 }
@@ -161,7 +164,7 @@ nav {
   margin: 0 0 100px 0;
   padding-top: 69px;
 
-  @media screen AND (max-width: 1300.98px) {
+  @media screen AND (max-width: 1400.98px) {
     background-image: url("../imgs/backgrounds/code.png");
     background-size: cover;
   }
@@ -272,8 +275,16 @@ nav {
   text-decoration: none;
 }
 
-.mobile-menu-button {
-  @media screen AND (max-width: 991.98px) {
+/* .mobile-menu-button {
+  display: none;
+
+  @media screen AND (max-width: 1400.98px) {
+    display: flex;
+  }
+} */
+
+.mobile-menu-width {
+  @media screen AND (max-width: 1400.98px) {
     width: 100%;
   }
 }
@@ -282,7 +293,7 @@ nav {
   width: 50%;
   justify-content: space-between;
 
-  @media screen AND (max-width: 991.98px) {
+  @media screen AND (max-width: 1400.98px) {
     width: 100%;
     padding-top: 10px;
     flex-direction: column;
@@ -295,7 +306,7 @@ nav {
   font-size: 24px;
   color: white;
 
-  @media screen AND (max-width: 991.98px) {
+  @media screen AND (max-width: 1400.98px) {
     padding: 16px 20px 16px 20px;
   }
 }
@@ -486,11 +497,15 @@ nav {
   display: contents;
 }
 
-@media screen AND (max-width: 991.98px) {
+@media screen AND (max-width: 1400.98px) {
   .social-links-wrapper {
     display: flex;
     flex-direction: row;
     gap: 50px;
+  }
+
+  .nav-link {
+    margin-top: 20px;
   }
 }
 
@@ -504,17 +519,21 @@ nav {
 
 
 
-.zoom-items>a {
+/* .zoom-items>a {
   display: inline-block;
-}
+} */
 
 .zoom-items>*:hover {
-  transform: scale(1.5);
-  color: white;
+  @media (hover:hover) and (pointer: fine) {
+    transform: scale(1.5);
+    color: white;
+  }
 }
 
 .zoom-transition>* {
-  transition: transform .3s ease-in-out;
+  @media (hover:hover) and (pointer: fine) {
+    transition: transform .3s ease-in-out;
+  }
 }
 
 /* NOTE SKILL LOGO ANIMATIONS */
