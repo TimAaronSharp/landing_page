@@ -319,10 +319,6 @@ nav {
   background-attachment: fixed;
 }
 
-/* .pause-animation {
-  animation-play-state: paused !important;
-} */
-
 .portfolio-img {
   max-width: 100%;
   max-height: 100%;
@@ -493,12 +489,12 @@ nav {
 }
 
 /* NOTE display: contents causes an element's children to appear as if they were the direct children of the element's parent, effectively removing the element itself  from the layout without removing its content. This particular usage is what allowed the social nav-links to still be affected by the justify-content-between (space-between) with the other nav-links to retain the same spacing, even while the social links were in their own wrapper div for structure in the collapse menu. */
-.social-links-wrapper {
+.nav-links-wrapper {
   display: contents;
 }
 
 @media screen AND (max-width: 1400.98px) {
-  .social-links-wrapper {
+  .nav-links-wrapper {
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -517,20 +513,14 @@ nav {
   text-shadow: 1px 2px 4px black;
 }
 
-
-
-/* .zoom-items>a {
-  display: inline-block;
-} */
-
-.zoom-items>*:hover {
+.zoom-item:hover {
   @media (hover:hover) and (pointer: fine) {
     transform: scale(1.5);
     color: white;
   }
 }
 
-.zoom-transition>* {
+.zoom-transition {
   @media (hover:hover) and (pointer: fine) {
     transition: transform .3s ease-in-out;
   }
