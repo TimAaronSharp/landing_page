@@ -398,13 +398,18 @@ nav {
 }
 
 .skill-img {
+  max-width: 130px;
+  width: 100%;
+}
+
+.skill-img-wrapper {
   --translate-x: 0px;
   --translate-y: 0px;
-  --scale: 1;
 
+  width: clamp(50px, 8vw, 130px);
   position: absolute;
-  max-height: 130px;
-  max-width: 130px;
+  height: 85%;
+  pointer-events: none;
   left: 46%;
   z-index: -1;
   opacity: 0;
@@ -412,41 +417,27 @@ nav {
 
   transform: translate(var(--translate-x), var(--translate-y));
   transition: opacity 1s ease-in-out, transform 1s ease-in-out, z-index .1s ease-in, z-index 1.5s ease-out;
-
-  /* Tried using this line to make the img scale on hover along with .skill-img:hover. Currently not working so I commented it out to avoid unforeseen issues, even though the translate still worked. */
-  /* transform: translate(var(--translate-x), var(--translate-y)) scale(var(--scale)); */
 }
 
-/* Currently not working */
-/* .skill-img:hover {
-  --scale: 1.1;
-} */
-
 .skills-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  height: 33vh;
   margin: 100px 0 100px 0;
   background-image: url('../imgs/backgrounds/computer_tools.jpg');
-  /* z-index: 1; */
 
-  transition: padding-bottom 1s ease-in-out;
+  transition: height 1s ease-in-out;
 }
 
 .skills-section-grow {
-  padding-bottom: 700px;
+  height: 100vh;
 
-  @media screen AND (max-width: 1031.98px) {
-    padding-bottom: 850px;
-  }
-
-  @media screen AND (max-width: 469.98px) {
-    padding-bottom: 900px;
+  @media all AND (orientation: portrait) {
+    height: 75vh;
   }
 }
 
 #skills-toolbox {
-  /* left: 37%; */
-  /* top: 41%; */
+  /* left: 37%;
+  top: 41%; */
   display: inline-block;
   padding: 0;
   border: none;
@@ -477,10 +468,7 @@ nav {
 #toolbox-img {
   max-width: 100%;
   z-index: 1;
-
-  @media screen AND (max-width: 469.98px) {
-    width: 50%;
-  }
+  width: clamp(160px, 20vw, 320px)
 }
 
 .smoked-glass {
@@ -528,181 +516,156 @@ nav {
 
 /* NOTE SKILL LOGO ANIMATIONS */
 
-.skills-toolbox-move {
-  left: 37%;
-  top: 45%;
-  transform: translate(-10px, 320px);
-
-  @media screen AND (max-width: 1031.98px) {
-    /* transform: translateY(440px); */
-    transform: translate(-10px, 440px);
-  }
-
-  @media screen AND (max-width: 469.98px) {
-    /* transform: translateY(470px); */
-    transform: translate(-10px, 470px);
-  }
-}
-
 .html-logo-move {
   opacity: 1;
   z-index: 1;
-  --translate-x: 0px;
-  --translate-y: -300px;
-  /* transform: translateY(-300px); */
+  --translate-x: 0;
+  --translate-y: -40vh;
 
-  @media screen AND (max-width: 1031.98px) {
-    --translate-x: -25px;
-    --translate-y: -470px;
+  @media all AND (orientation: landscape) {
+    --translate-x: 0;
+    --translate-y: -40vh;
   }
 
-  @media screen AND (max-width: 469.98px) {
-    --translate-x: -45px;
-    --translate-y: -470px;
+  @media all AND (orientation: portrait) {
+    --translate-x: 0;
+    --translate-y: -23vh;
   }
 }
 
 .css-logo-move {
   opacity: 1;
   z-index: 1;
-  --translate-x: -275px;
-  --translate-y: -230px;
-  /* transform: translate(-275px, -230px); */
+  --translate-x: -15vw;
+  --translate-y: -23vh;
 
-  @media screen AND (max-width: 1031.98px) {
-    --translate-x: -128px;
-    --translate-y: -310px;
+  @media all AND (orientation: landscape) {
+    --translate-x: -15vw;
+    --translate-y: -28vh;
   }
 
-  @media screen AND (max-width: 469.98px) {
-    --translate-x: -128px;
-    --translate-y: -310px;
+  @media all AND (orientation: portrait) {
+    --translate-x: -24vw;
+    --translate-y: -17vh;
   }
 }
 
 .bootstrap-logo-move {
   opacity: 1;
   z-index: 1;
-  --translate-x: -425px;
-  --translate-y: 0px;
-  /* transform: translateX(-425px); */
+  --translate-x: -25vw;
+  --translate-y: -4vh;
 
-  @media screen AND (max-width: 1031.98px) {
-    --translate-x: -135px;
-    --translate-y: -110px;
+  @media all AND (orientation: landscape) {
+    --translate-x: -25vw;
+    --translate-y: -4vh;
   }
 
-  @media screen AND (max-width: 469.98px) {
-    --translate-x: -135px;
-    --translate-y: -110px;
+  @media all AND (orientation: portrait) {
+    --translate-x: -38vw;
+    --translate-y: -2vh;
   }
 }
 
 .javascript-logo-move {
   opacity: 1;
   z-index: 1;
-  --translate-x: 275px;
-  --translate-y: -230px;
-  /* transform: translate(275px, -230px); */
+  --translate-x: 15vw;
+  --translate-y: -28vh;
 
-  @media screen AND (max-width: 1031.98px) {
-    --translate-x: 87px;
-    --translate-y: -310px;
+  @media all AND (orientation: landscape) {
+    --translate-x: 15vw;
+    --translate-y: -28vh;
   }
 
-  @media screen AND (max-width: 469.98px) {
-    --translate-x: 37px;
-    --translate-y: -310px;
+  @media all AND (orientation: portrait) {
+    --translate-x: 24vw;
+    --translate-y: -17vh;
   }
 }
 
 .vue-logo-move {
   opacity: 1;
   z-index: 1;
-  --translate-x: 425px;
-  --translate-y: 0px;
-  /* transform: translateX(425px); */
+  --translate-x: 25vw;
+  --translate-y: -4vh;
 
-  @media screen AND (max-width: 1031.98px) {
-    --translate-x: 87px;
-    --translate-y: -110px;
+  @media all AND (orientation: landscape) {
+    --translate-x: 25vw;
+    --translate-y: -4vh;
   }
 
-  @media screen AND (max-width: 469.98px) {
-    --translate-x: 37px;
-    --translate-y: -110px;
+  @media all AND (orientation: portrait) {
+    --translate-x: 38vw;
+    --translate-y: -2vh;
   }
 }
 
 .csharp-logo-move {
   opacity: 1;
   z-index: 1;
-  --translate-x: -315px;
-  --translate-y: 230px;
-  /* transform: translate(-315px, 230px); */
+  --translate-x: -20vw;
+  --translate-y: 20vh;
 
-  @media screen AND (max-width: 1031.98px) {
-    --translate-x: -128px;
-    --translate-y: 250px;
+  @media all AND (orientation: landscape) {
+    --translate-x: -20vw;
+    --translate-y: 20vh;
   }
 
-  @media screen AND (max-width: 469.98px) {
-    --translate-x: -128px;
-    --translate-y: 250px;
+  @media all AND (orientation: portrait) {
+    --translate-x: -30vw;
+    --translate-y: 13vh;
   }
 }
 
 .mysql-logo-move {
   opacity: 1;
   z-index: 1;
-  --translate-x: -130px;
-  --translate-y: 380px;
-  /* transform: translate(-130px, 380px); */
+  --translate-x: -7.5vw;
+  --translate-y: 38vh;
 
-  @media screen AND (max-width: 1031.98px) {
-    --translate-x: -135px;
-    --translate-y: 440px;
+  @media all AND (orientation: landscape) {
+    --translate-x: -7.5vw;
+    --translate-y: 38vh;
   }
 
-  @media screen AND (max-width: 469.98px) {
-    --translate-x: -135px;
-    --translate-y: 440px;
+  @media all AND (orientation: portrait) {
+    --translate-x: -10vw;
+    --translate-y: 22vh;
   }
 }
 
 .mongodb-logo-move {
   opacity: 1;
   z-index: 1;
-  --translate-x: 130px;
-  --translate-y: 380px;
-  /* transform: translate(130px, 380px); */
+  --translate-x: 7.5vw;
+  --translate-y: 40vh;
 
-  @media screen AND (max-width: 1031.98px) {
-    --translate-x: 87px;
-    --translate-y: 458px;
+  @media all AND (orientation: landscape) {
+    --translate-x: 7.5vw;
+    --translate-y: 40vh;
   }
 
-  @media screen AND (max-width: 469.98px) {
-    --translate-x: 30px;
-    --translate-y: 458px;
+  @media all AND (orientation: portrait) {
+    --translate-x: 10vw;
+    --translate-y: 24vh;
   }
 }
 
 .nodejs-logo-move {
   opacity: 1;
   z-index: 1;
-  --translate-x: 315px;
-  --translate-y: 230px;
-  /* transform: translate(315px, 230px); */
+  --translate-x: 20vw;
+  --translate-y: 20vh;
 
-  @media screen AND (max-width: 1031.98px) {
-    --translate-x: 97px;
-    --translate-y: 250px;
+  @media all AND (orientation: landscape) {
+    --translate-x: 20vw;
+    --translate-y: 20vh;
   }
 
-  @media screen AND (max-width: 469.98px) {
-    --translate-x: 37px;
-    --translate-y: 250px;
+  @media all AND (orientation: portrait) {
+    --translate-x: 30vw;
+    --translate-y: 13vh;
   }
 }
 

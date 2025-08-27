@@ -3,7 +3,7 @@ function skillAnimator() {
   document.getElementById('skills-toolbox').addEventListener('click', () => {
     // Skill section, toolbox, and arrow.
     document.getElementById('skills-section-id').classList.toggle('skills-section-grow')
-    document.getElementById('skills-toolbox').classList.toggle('skills-toolbox-move')
+    // document.getElementById('skills-toolbox').classList.toggle('skills-toolbox-move')
     // document.getElementById('toolbox-img').classList.toggle('pause-animation')
     // document.getElementById('arrow-img-id').classList.toggle('arrow-img-disappear')
 
