@@ -52,5 +52,22 @@ function playAudio() {
   }
 }
 
+
+function disappearArrows() {
+  window.addEventListener('scroll', () => {
+    const arrows = document.getElementById('arrows');
+    const scrollThreshold = 150;
+    // console.log(arrowWrapper);
+
+    if (window.scrollY > scrollThreshold) {
+      document.getElementById('left-arrow').classList.add('arrow-fade')
+      document.getElementById('right-arrow').classList.add('arrow-fade')
+    } else {
+      document.getElementById('left-arrow').classList.remove('arrow-fade')
+      document.getElementById('right-arrow').classList.remove('arrow-fade')
+    }
+  })
+}
 playAudio()
 skillAnimator()
+disappearArrows()

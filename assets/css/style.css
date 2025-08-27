@@ -87,11 +87,22 @@ nav {
   }
 }
 
+.arrow {
+  opacity: 1;
+  /* z-index: 3; */
+  transition: opacity .5s ease-in-out;
+}
+
+.arrow-fade {
+  opacity: 0;
+}
+
 .arrow-left {
   max-width: 100%;
   width: 130px;
   position: absolute;
-  top: 100%;
+
+  bottom: 5vh;
   left: 0;
 }
 
@@ -99,12 +110,15 @@ nav {
   max-width: 100%;
   width: 130px;
   position: absolute;
-  top: 100%;
+
+  bottom: 5vh;
   right: 0;
 }
 
 .arrow-wrapper {
   width: 100%;
+  z-index: 3;
+  height: 100%;
   position: relative;
 
   animation: arrow-animation 2s ease-in-out infinite;
