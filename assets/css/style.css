@@ -32,6 +32,17 @@ nav {
 
 /* NOTE END ELEMENT RULES */
 
+/* NOTE TEMP */
+
+.section-opacity {
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.section-fade {
+  opacity: 1;
+}
+
 .about-me-picture {
   border-radius: 50%;
 
