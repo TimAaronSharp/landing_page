@@ -32,16 +32,16 @@ nav {
 
 /* NOTE END ELEMENT RULES */
 
-/* NOTE TEMP */
+/* NOTE These 2 section classes were for the section fading in/out effect. Not currently implemented. */
 
-.section-opacity {
+/* .section-opacity {
   opacity: 0;
   transition: opacity .5s ease-in-out;
 }
 
 .section-fade {
   opacity: 1;
-}
+} */
 
 .about-me-picture {
   border-radius: 50%;
