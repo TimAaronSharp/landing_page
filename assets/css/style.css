@@ -1,4 +1,4 @@
-/* NOTE ELEMENT RULES */
+/* ELEMENT RULES */
 
 body {
   background-color: black;
@@ -30,7 +30,7 @@ nav {
   z-index: 10;
 }
 
-/* NOTE END ELEMENT RULES */
+/* END ELEMENT RULES */
 
 /* NOTE These 2 section classes were for the section fading in/out effect. Not currently implemented. */
 
@@ -46,10 +46,6 @@ nav {
 .about-me-picture {
   border-radius: 50%;
 
-  /* 
-  @media screen AND (max-width: 991.98px) {
-    margin-bottom: 48px;
-  } */
   @media (hover:hover) and (pointer: fine) {
 
     :hover {
@@ -78,7 +74,6 @@ nav {
 .about-me-section-heading {
   z-index: 2;
   background-color: black;
-  /* margin: 100px 0 100px 0; */
 }
 
 .about-me-text {
@@ -88,8 +83,6 @@ nav {
   text-indent: 2em;
 
   @media screen AND (max-width: 991.98px) {
-    /* padding-top: 100px;
-    padding-right: 0; */
     padding: clamp(1.56rem, 10vw, 6.25rem) 0 0 0;
   }
 
@@ -100,7 +93,6 @@ nav {
 
 .arrow {
   opacity: 1;
-  /* z-index: 3; */
   transition: opacity .5s ease-in-out;
 }
 
@@ -180,26 +172,13 @@ nav {
   }
 }
 
-.fade-text {
-  background: linear-gradient(to right, transparent 0%, white 100%);
-  background-size: 200% 100%;
-  background-position: -100% 0;
-
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  animation: fadeAnimation 4s linear infinite;
-}
-
 @keyframes fadeAnimation {
   0% {
     background-position: 100% 0;
-    /* transform: translateX(-20px); */
   }
 
   100% {
     background-position: -100% 0;
-    /* transform: translateX(0); */
   }
 }
 
@@ -220,9 +199,7 @@ nav {
 }
 
 .hero-section {
-  /* background-size: 50%; */
   height: 100dvh;
-  /* max-width: 100%; */
   margin: 0 0 100px 0;
   padding-top: 69px;
 
@@ -230,22 +207,6 @@ nav {
     background-image: url("../imgs/backgrounds/code.png");
     background-size: cover;
   }
-}
-
-.hero-text>* {
-  font-size: 72px;
-  color: transparent;
-  text-align: center;
-}
-
-.hero-text-left {
-  left: 8%;
-  top: 40%;
-}
-
-.hero-text-right {
-  right: 4%;
-  top: 40%;
 }
 
 .img-class {
@@ -337,14 +298,6 @@ nav {
   text-decoration: none;
 }
 
-/* .mobile-menu-button {
-  display: none;
-
-  @media screen AND (max-width: 1400.98px) {
-    display: flex;
-  }
-} */
-
 .mobile-menu-width {
   @media screen AND (max-width: 1400.98px) {
     width: 100%;
@@ -364,17 +317,12 @@ nav {
 
 .navbar-style {
   padding: 16px 100px 16px 100px;
-  /* outline: 1px solid white; */
   font-size: 24px;
   color: white;
 
   @media screen AND (max-width: 1400.98px) {
     padding: 16px 20px 16px 20px;
   }
-}
-
-.outline-style {
-  outline: 1px solid white;
 }
 
 .parallax {
@@ -391,7 +339,6 @@ nav {
 }
 
 .portfolio-img-overlay {
-  /* content: ''; */
   position: absolute;
   top: 0;
   right: 0;
@@ -399,7 +346,6 @@ nav {
   left: 0;
   height: 400px;
   background: rgba(128, 128, 128, 0.5);
-  /* pointer-events: none; */
   z-index: 1;
   transform: translateY(100%);
   transition: transform .65s ease-in-out;
@@ -436,18 +382,8 @@ nav {
 }
 
 .portfolio-section {
-  /* padding: 100px; */
   margin: 100px 0 100px 0;
   overflow: hidden;
-  /* background-image: url('../imgs/backgrounds/building_plans.jpg'); */
-
-  /* * {
-    z-index: 1;
-  } */
-
-  /* @media screen AND (max-width: 991.98px) {
-    padding: 100px 50px 100px 50px;
-  } */
 }
 
 .portfolio-links {
@@ -498,8 +434,6 @@ nav {
 }
 
 #skills-toolbox {
-  /* left: 37%;
-  top: 41%; */
   display: inline-block;
   padding: 0;
   border: none;
@@ -555,10 +489,6 @@ nav {
   }
 }
 
-.sub-heading {
-  font-size: 16px;
-}
-
 .text-shadow {
   text-shadow: 1px 2px 4px black;
 }
@@ -576,7 +506,7 @@ nav {
   }
 }
 
-/* NOTE SKILL LOGO ANIMATIONS */
+/* SKILL LOGO ANIMATIONS */
 
 .html-logo-move {
   opacity: 1;
@@ -731,119 +661,4 @@ nav {
   }
 }
 
-/* NOTE END SKILL LOGO ANIMATIONS */
-
-/* .arrow-img {
-  width: 190px;
-  max-width: 100%;
-  position: absolute;
-  left: 65vw;
-  top: 25%;
-  opacity: 1;
-  z-index: 1;
-
-  animation: arrow-img-animation 2s ease-in-out infinite;
-  transition: opacity .2s ease-in;
-}
-
-@keyframes arrow-img-animation {
-  0% {
-    transform: translateX(0);
-  }
-
-  50% {
-    transform: translateX(clamp(-10vw, -7vw, -1vw));
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.arrow-img-disappear {
-  opacity: 0;
-  transition: .2s ease-in;
-} */
-
-/* NOTE This applies to any element that has the .arrow-img class and also does NOT have the .arrow-img-disappear class as well. */
-/* .arrow-img:not(.arrow-img-disappear) {
-  transition: opacity .2s ease-out .8s;
-} */
-
-/* .atom-img {
-  max-width: 100%;
-  width: 142px;
-  height: 64px;
-  z-index: 1;
-  position: absolute;
-  display: inline-block;
-} */
-
-/* .atom-csharp-img {
-  top: 45%;
-  right: 45%;
-  animation: csharp-z-animation 3s ease-in-out infinite;
-} */
-
-/* .atom-csharp-orbit {
-  transform: rotateX(70deg) rotateY(40deg);
-} */
-
-/* .atom-html-orbit {
-  transform: rotateX(105deg);
-} */
-
-/* .atom-orbit {
-  border: 1px solid white;
-  border-radius: 50%;
-  max-width: 100%;
-  max-height: 100%;
-  width: 400px;
-  height: 400px;
-} */
-
-/* .atom-img-csharp-orbit {
-  display: inline-block;
-  animation: csharp-xy-animation 2.5s ease-in-out infinite;
-  z-index: 1;
-} */
-
-/* .atom-container {
-  perspective: 1000px;
-} */
-
-
-
-
-
-
-
-/* @keyframes csharp-xy-animation {
-  0% {
-    transform: translate(0, 0);
-
-  }
-
-  50% {
-    transform: translate(15vw, 15vh);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes csharp-z-animation {
-  0% {
-    transform: scale(1);
-
-  }
-
-  50% {
-    transform: scale(.5);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-} */
+/* END SKILL LOGO ANIMATIONS */
